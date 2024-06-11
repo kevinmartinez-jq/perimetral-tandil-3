@@ -41,6 +41,12 @@
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
         }
     });
+
+    $(document).ready(function () {
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+    });
     
     // Testimonials Slider
     $('.bxslider').bxSlider({

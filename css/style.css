@@ -135,9 +135,10 @@ h6 {
 }
 
 .top-nav-collapse {
-  padding: -5;
+  padding: 5px;
   /* background: rgba(64,75,97, 0.9); */
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
 }
 
 .logo-dec {
@@ -821,4 +822,38 @@ figure.hover figcaption {
       margin: 0 auto; /* Centrando el contenedor */
     }
   }
+
+  /* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #main-header {
+    height: 60px; /* Altura del header en dispositivos móviles */
+  }
+
+  .navbar-brand {
+    font-size: 18px; /* Tamaño del texto de la marca en dispositivos móviles */
+  }
+
+  .navbar-toggle {
+    margin-right: 15px; /* Ajuste del espacio entre el botón de menú y la marca en dispositivos móviles */
+    border-color: transparent; /* Quitar borde del botón toggle */
+    background-color: black;
+  }
+
+  /* Fondo sólido para el menú desplegable en vista móvil */
+.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro opaco */
+  border: none; /* Quitar bordes si los hubiera */
+}
+
+/* Estilo para los enlaces del menú */
+.navbar-collapse .nav > li > a {
+  color: #fff; /* Color blanco para el texto */
+}
+
+/* Cambiar color de fondo al hacer hover en los enlaces */
+.navbar-collapse .nav > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente al hacer hover */
+}
+
+}
 }
